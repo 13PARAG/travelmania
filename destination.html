@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours Website</title>
+  <link rel="stylesheet" href="dest.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Travel Mania</h1>
+    <p>Your ultimate guide to exploring India's best destinations</p>
+  </header>
+
+  <main>
+    <section id="state-section">
+      <h2>Explore by State</h2>
+      <div class="search-container">
+        <input type="text" id="search-state" class="search-box" placeholder="Search State...">
+        <select id="state-select" class="select-box">
+          <option value="">Select State</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="goa">Goa</option>
+          <option value="west bengal">West Bengal</option>
+          <option value="himachal pradesh">Himachal Pradesh</option>
+          <!-- <option value="uttar pradesh">Uttar Pradesh</option>
+          <option value="andhra pradesh">Andhra Pradesh</option> -->
+          <option value="kerala">Kerala</option>
+          <!-- <option value="tamil nadu">Tamil Nadu</option>
+          <option value="karnataka">Karnataka</option> -->
+          <!-- Add more states as needed -->
+        </select>
+      </div>
+    </section>
+
+    <section id="date-section">
+      <h2>Advanced Search</h2>
+      <h3>Get the best possible destinations</h3>
+      <div class="date-selector">
+        <label for="tour-date-1">Select Date 1 (DD/MM):</label>
+        <input type="text" id="tour-date-1" placeholder="DD/MM">
+        <br>
+        <br>
+        <label for="tour-date-2">Select Date 2 (DD/MM):</label>
+        <input type="text" id="tour-date-2" placeholder="DD/MM">
+        <br>
+        <br>
+        <button onclick="openTourPage()" class="explore-button">Explore</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="clock">
+      <div class="clock-time">
+        <span id="hours">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+      </div>
+      <div class="clock-date">
+        <span id="date"></span>
+      </div>
+      <!-- <div class="clock-ampm">
+        <span id="ampm"></span>
+      </div> -->
+    </div>
+  </footer>
+
+  <script src="dest.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
